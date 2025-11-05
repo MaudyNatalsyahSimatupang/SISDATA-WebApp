@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tambah Data Siswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SISDATA</h1>
+    <p class="subtitle">Sistem Data Siswa | SMA Swasta Cinta Kasih</p>
+    <form action="../backend/siswa_create.php" method="POST" class="box">
+      <input type="text" name="nis" placeholder="Masukkan NIS" required>
+      <input type="text" name="nama" placeholder="Masukkan Nama Siswa" required>
+      <input type="text" name="kelas" placeholder="Masukkan Kelas" required>
+      <input type="text" name="alamat" placeholder="Masukkan Alamat">
+      <input type="email" name="email" placeholder="Masukkan Email">
+      <input type="text" name="telepon" placeholder="Masukkan No Telepon">
+      <button type="submit">Tambahkan</button>
+    </form>
+    <a href="dashboard.html"><button>Kembali</button></a>
+  </div>
+</body>
+</html>

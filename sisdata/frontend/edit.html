@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Data Siswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SISDATA</h1>
+    <p class="subtitle">Sistem Data Siswa | SMA Swasta Cinta Kasih</p>
+    <form action="../backend/siswa_update.php" method="POST" class="box" id="edit-form">
+      <input type="hidden" name="id" id="id">
+      <input type="text" name="nis" id="nis" placeholder="Masukkan NIS">
+      <input type="text" name="nama" id="nama" placeholder="Masukkan Nama">
+      <input type="text" name="kelas" id="kelas" placeholder="Masukkan Kelas">
+      <input type="text" name="alamat" id="alamat" placeholder="Masukkan Alamat">
+      <input type="email" name="email" id="email" placeholder="Masukkan Email">
+      <input type="text" name="telepon" id="telepon" placeholder="Masukkan No Telepon">
+      <button type="submit">Selesai Edit</button>
+    </form>
+    <a href="dashboard.html"><button>Kembali</button></a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
