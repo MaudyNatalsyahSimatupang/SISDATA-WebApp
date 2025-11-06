@@ -1,11 +1,8 @@
 <?php
-$host = 'localhost';
+$host = 'db'; // <--- ini penting!
 $dbname = 'sisdata';
 $username = 'root';
-$password = ''; // kosong kalau pakai XAMPP
-
-session_start();
-
+$password = 'root'; // sesuai MYSQL_ROOT_PASSWORD di docker-compose.yml
 
 try {
   $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
